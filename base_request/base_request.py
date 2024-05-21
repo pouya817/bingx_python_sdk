@@ -1,14 +1,13 @@
+from exeptions import BingxExceptionErrors
+from config.config_dev import *
+from hashlib import sha256
+import requests
 import hmac
 import time
-from hashlib import sha256
-
-import requests
-
-from exeptions import BingxExceptionErrors
 
 
 class BaseRequest(object):
-    def __init__(self, key='', secret='', url='https://open-api.bingx.com'):
+    def __init__(self, key='', secret='', url=BASE_BINGX_URLS):
         """
         https://bingx-api.github.io/docs
         :param key: bingx-api key for Bingx API (mandatory)
