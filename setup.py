@@ -5,7 +5,7 @@ setup(
     name='bingx-python',
     version='v1.0.0',
     packages=['bingx', 'bingx/base_request','kucoin/trade'],
-    license="HUT",
+    license="MIT",
     author='pouya',
     author_email="m.pouya.ch@gmail.com",
     url='https://github.com/pouya817/bingx_python_sdk',
@@ -13,7 +13,7 @@ setup(
     install_requires=['requests'],
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: HUT License",
+        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
 )
